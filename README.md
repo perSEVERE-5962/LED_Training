@@ -43,16 +43,17 @@ Create the VSCode project
         - NetworkTableInstance
         - NetworkTable
         - NetworkTableEntry
-        ```java
-        private NetworkTableInstance inst = NetworkTableInstance.getDefault();
-  private NetworkTable table;
-  private NetworkTableEntry myEntry;
+            ```java
+            private NetworkTableInstance inst = NetworkTableInstance.getDefault();
+            private NetworkTable table;
+            private NetworkTableEntry myEntry;
 
-  public ExampleSubsystem() {
-    table = inst.getTable("LED");
-    myEntry = table.getEntry("IsOn");
-  }
-```
+            public ExampleSubsystem() {
+                table = inst.getTable("LED");
+                myEntry = table.getEntry("IsOn");
+            }
+            ```
+ 
     - Add toggle method
         - Change toggle value
         - Update NetworkTableEntry
@@ -61,10 +62,10 @@ Create the VSCode project
 ## Python LED Code
 - Now control LED using the gamepad controller
     - Create python folder under src
-    - Create new file called led.py
+    - Create new file called [led.py](src/main/python/led.py)
     - Read “isOn” from the “LED” table in the NetworkTable and toggle the led
 
-```python
+``` python3
 #!/usr/bin/env python3
 import RPi.GPIO as GPIO
 import sys

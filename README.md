@@ -43,7 +43,7 @@ Create the VSCode project
         - NetworkTableInstance
         - NetworkTable
         - NetworkTableEntry
-        '''java
+        ```java
         private NetworkTableInstance inst = NetworkTableInstance.getDefault();
   private NetworkTable table;
   private NetworkTableEntry myEntry;
@@ -52,7 +52,7 @@ Create the VSCode project
     table = inst.getTable("LED");
     myEntry = table.getEntry("IsOn");
   }
-'''
+```
     - Add toggle method
         - Change toggle value
         - Update NetworkTableEntry
@@ -64,7 +64,7 @@ Create the VSCode project
     - Create new file called led.py
     - Read “isOn” from the “LED” table in the NetworkTable and toggle the led
 
-'''python
+```python
 #!/usr/bin/env python3
 import RPi.GPIO as GPIO
 import sys
@@ -88,5 +88,5 @@ while True:
         GPIO.output(12,GPIO.LOW)
 
 GPIO.cleanup()  
-'''
+```
 

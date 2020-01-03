@@ -50,7 +50,7 @@ Create the VSCode project
 
             public ExampleSubsystem() {
                 table = inst.getTable("LED");
-                myEntry = table.getEntry("IsOn");
+                myEntry = table.getEntry("isOn");
             }
             ```
  
